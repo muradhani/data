@@ -42,4 +42,5 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     implementation(libs.gson)
     implementation(project(":domain"))
+    implementation ("com.squareup.retrofit2:retrofit:2.11.0")
 }
