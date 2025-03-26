@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+    id ("kotlin-kapt")
+    id ("com.google.dagger.hilt.android")
 }
 
 android {
@@ -43,4 +45,6 @@ dependencies {
     implementation(libs.gson)
     implementation(project(":domain"))
     implementation ("com.squareup.retrofit2:retrofit:2.11.0")
+    implementation ("com.google.dagger:hilt-android:2.56.1")
+    kapt("com.google.dagger:hilt-compiler:2.56.1")
 }
